@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #ffffff);
+    
+    margin: 0;
+    line-height: 1.6;
+}
+.navbar {
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: auto;
+}
+.nav-link {
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: black;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+h3 {
+    margin-top: 20px;
+    color: #555;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

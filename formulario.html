@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Intereses y Actividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="resultado" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(255, 255, 255)!important;">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo-removebg-preview.png" alt="logo" class="img-fluid" width="100px" height="100px" />
+        </a>
+    </nav>
+    
+    <h2>Preguntas sobre intereses y habilidades en carreras:</h2>
+    <form id="interestsForm">
+        <h3>1. ¿Cuál de las siguientes actividades te interesa más?</h3>
+        <label><input type="radio" name="actividad1" value="A"> A) Desarrollo de sistemas computacionales e integración de software y hardware</label><br>
+        <label><input type="radio" name="actividad1" value="B"> B) Planificación y organización de tareas o recursos</label><br>
+        <label><input type="radio" name="actividad1" value="C"> C) Análisis de mecanismos, máquinas y procesos industriales</label><br>
+        <label><input type="radio" name="actividad1" value="D"> D) Liderazgo y emprendimiento para mejorar el entorno</label><br>
+
+        <h3>2. ¿Qué tan cómodo/a te sientes trabajando con matemáticas y ciencias físicas?</h3>
+        <label><input type="radio" name="comodidad" value="A"> A) Muy cómodo/a</label><br>
+        <label><input type="radio" name="comodidad" value="B"> B) Algo cómodo/a</label><br>
+        <label><input type="radio" name="comodidad" value="C"> C) Indiferente</label><br>
+        <label><input type="radio" name="comodidad" value="D"> D) Prefiero evitarlo</label><br>
+
+        <h3>3. ¿Te gustaría trabajar en un entorno donde puedas liderar equipos o proyectos?</h3>
+        <label><input type="radio" name="liderazgo" value="A"> A) Sí, me encanta la idea de liderar equipos</label><br>
+        <label><input type="radio" name="liderazgo" value="B"> B) Sí, pero prefiero coordinar y organizar sin liderar directamente</label><br>
+        <label><input type="radio" name="liderazgo" value="C"> C) Prefiero trabajar individualmente</label><br>
+        <label><input type="radio" name="liderazgo" value="D"> D) No estoy seguro/a</label><br>
+
+        <h3>4. ¿Qué prefieres hacer al resolver problemas?</h3>
+        <label><input type="radio" name="resolver" value="A"> A) Utilizar razonamiento lógico y matemático</label><br>
+        <label><input type="radio" name="resolver" value="B"> B) Planificar estrategias y coordinar tareas</label><br>
+        <label><input type="radio" name="resolver" value="C"> C) Investigar e innovar con nuevas tecnologías</label><br>
+        <label><input type="radio" name="resolver" value="D"> D) Organizar los recursos de manera efectiva</label><br>
+
+        <h3>5. ¿Qué tan interesado/a estás en el uso de tecnologías avanzadas para mejorar sistemas?</h3>
+        <label><input type="radio" name="tecnologias" value="A"> A) Muy interesado/a</label><br>
+        <label><input type="radio" name="tecnologias" value="B"> B) Algo interesado/a</label><br>
+        <label><input type="radio" name="tecnologias" value="C"> C) Solo si es necesario</label><br>
+        <label><input type="radio" name="tecnologias" value="D"> D) No me interesa mucho</label><br>
+
+        <h3>Preguntas sobre actividades extracurriculares:</h3>
+        <h3>1. ¿Cuál de las siguientes actividades deportivas prefieres?</h3>
+        <label><input type="radio" name="deporte2" value="A"> A) Básquetbol</label><br>
+        <label><input type="radio" name="deporte2" value="B"> B) Voleibol</label><br>
+        <label><input type="radio" name="deporte2" value="C"> C) Fútbol</label><br>
+        <label><input type="radio" name="deporte2" value="D"> D) Boxeo</label><br>
+
+        <h3>2. ¿Qué tipo de actividades culturales o artísticas te interesan más?</h3>
+        <label><input type="radio" name="cultural" value="A"> A) Danza o teatro</label><br>
+        <label><input type="radio" name="cultural" value="B"> B) Banda de guerra o escolta</label><br>
+        <label><input type="radio" name="cultural" value="C"> C) Banda versátil o estudiantina</label><br>
+        <label><input type="radio" name="cultural" value="D"> D) Club de lectura o ajedrez</label><br>
+
+        <h3>3. ¿Te gustaría participar en actividades de estrategia o intelectuales?</h3>
+        <label><input type="radio" name="estrategia" value="A"> A) Sí, en actividades como ajedrez</label><br>
+        <label><input type="radio" name="estrategia" value="B"> B) Sí, en algo como un club de lectura</label><br>
+        <label><input type="radio" name="estrategia" value="C"> C) Prefiero actividades físicas o deportivas</label><br>
+        <label><input type="radio" name="estrategia" value="D"> D) No estoy seguro/a</label><br>
+
+        <h3>4. ¿Cuál de estas actividades te resultaría más atractiva para integrarte en la escuela?</h3>
+        <label><input type="radio" name="integracion" value="A"> A) Participar en la escolta</label><br>
+        <label><input type="radio" name="integracion" value="B"> B) Practicar en la banda de guerra</label><br>
+        <label><input type="radio" name="integracion" value="C"> C) Integrarme a un club de teatro</label><br>
+        <label><input type="radio" name="integracion" value="D"> D) Participar en un club de boxeo</label><br>
+
+        <input type="submit" value="Enviar respuestas">
+    </form>
+    
+    <script>
+        document.getElementById('interestsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+          
+            let scores = {
+                ISC: 0,
+                IM: 0,
+                II: 0,
+                IGE: 0
+            };
+
+            let actividad1 = document.querySelector('input[name="actividad1"]:checked')?.value;
+            let comodidad = document.querySelector('input[name="comodidad"]:checked')?.value;
+            let liderazgo = document.querySelector('input[name="liderazgo"]:checked')?.value;
+            let resolver = document.querySelector('input[name="resolver"]:checked')?.value;
+            let tecnologias = document.querySelector('input[name="tecnologias"]:checked')?.value;
+
+       
+            if (actividad1 === 'A') scores.ISC += 2;
+            if (actividad1 === 'B') scores.IGE += 2;
+            if (actividad1 === 'C') scores.IM += 2;
+            if (actividad1 === 'D') scores.II += 2;
+            
+            if (comodidad === 'A') scores.IM += 2;
+            if (liderazgo === 'A') scores.II += 2;
+            if (resolver === 'A') scores.IGE += 2;
+            if (tecnologias === 'A') scores.ISC += 2;
+
+          
+            let recommendation = "Recomendación: ";
+            let maxScore = Math.max(scores.ISC, scores.IM, scores.II, scores.IGE);
+            if (maxScore === scores.ISC) recommendation += "Ingeniería en Sistemas Computacionales";
+            else if (maxScore === scores.IM) recommendation += "Ingeniería Mecatrónica";
+            else if (maxScore === scores.II) recommendation += "Ingeniería Industrial";
+            else if (maxScore === scores.IGE) recommendation += "Ingeniería en Gestión Empresarial";
+
+            document.getElementById('resultado').textContent = recommendation;
+        });
+    </script>
+</body>
+</html>

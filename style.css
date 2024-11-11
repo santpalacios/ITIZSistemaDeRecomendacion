@@ -1,12 +1,11 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  
+    background: linear-gradient(to bottom, #3498db, #ffffff);
+    
     margin: 0;
     line-height: 1.6;
 }
-
 .container, .footer-container {
     margin: 20px auto;
     max-width: 1000px;
@@ -15,21 +14,20 @@ body {
 /* Navbar */
 .navbar {
     border-bottom: 1px solid #ddd;
-    background-color: #fff;
+    background-color: white;
 }
 
 .navbar-brand img {
     width: 70px;
     height: auto;
 }
-
 .nav-link {
     font-weight: 500;
-    color: #333;
+    color: black;
     transition: color 0.3s;
 }
 .nav-link:hover {
-    color: #555;
+    color: black;
 }
 
 /* Section Titles */
@@ -64,7 +62,9 @@ p {
 }
 
 .card-text {
-    font-size: 0.95em;
+    font-size: medium;
+    line-height: 1.2; /* Ajusta el valor según la separación deseada entre líneas */
+    margin-bottom: 0.5rem; /* Ajusta el margen inferior entre párrafos */
  
 }
 
@@ -73,8 +73,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
 }
 
 .footer-container h5 {
@@ -119,4 +121,46 @@ a.text-dark:hover {
     line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify; 
+}
+.informacion, .direccion {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+h3 {
+    margin-top: 20px;
+    color: #555;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
