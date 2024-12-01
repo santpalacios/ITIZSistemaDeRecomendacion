@@ -1,427 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <title>Formulario</title>
-    <style>
-      body {
-        background: -webkit-linear-gradient(
-          0deg,
-          #121212,
-          #070906,
-          #03229b
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-          0deg,
-          #121212,
-          #070906,
-          #03229b
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-      h1 {
-        color: rgb(225, 225, 231);
-      }
-      h3 {
-        margin-top: 2rem;
-        color: rgb(225, 225, 231);
-      }
-      label {
-        font-weight: bold;
-        color: rgb(225, 225, 231);
-      }
-      input[type="radio"] {
-        margin-right: 10px;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
-      style="background-color: rgb(255, 255, 255) !important"
-    >
-      <a class="navbar-brand" href="#">
-        <img
-          src="image/logo-removebg-preview.png"
-          alt="logo"
-          class="img-fluid"
-          width="100px"
-          height="100px"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">ITIZ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#oferta">OFERTA ACADEMICA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="formulario.html">FORMULARIO</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container" style="margin-top: 3rem">
-      <h1 style="color: rgb(236, 236, 240)">FORMULARIO DE RECOMENDACION DE CARRERA</h1>
-      <div class="dropdown-divider"></div>
-      <form id="interestsForm" style="text-transform: uppercase;">
-        <!-- Preguntas para recomendar una carrera -->
-        <h3>1. ¿Cuál de las siguientes actividades te interesa más?</h3>
-        <label
-          ><input type="radio" name="actividad1" value="A" /> A) Desarrollo de
-          sistemas computacionales e integración de software y hardware</label
-        ><br />
-        <label
-          ><input type="radio" name="actividad1" value="B" /> B) Planificación y
-          organización de tareas o recursos</label
-        ><br />
-        <label
-          ><input type="radio" name="actividad1" value="C" /> C) Análisis de
-          mecanismos, máquinas y procesos industriales</label
-        ><br />
-        <label
-          ><input type="radio" name="actividad1" value="D" /> D) Liderazgo y
-          emprendimiento para mejorar el entorno</label
-        ><br />
-
-        <h3>
-          2. ¿Qué tan cómodo/a te sientes trabajando con matemáticas y ciencias
-          físicas?
-        </h3>
-        <label
-          ><input type="radio" name="comodidad" value="A" /> A) Muy
-          cómodo/a</label
-        ><br />
-        <label
-          ><input type="radio" name="comodidad" value="B" /> B) Algo
-          cómodo/a</label
-        ><br />
-        <label
-          ><input type="radio" name="comodidad" value="C" /> C)
-          Indiferente</label
-        ><br />
-        <label
-          ><input type="radio" name="comodidad" value="D" /> D) Prefiero
-          evitarlo</label
-        ><br />
-
-        <h3>
-          3. ¿Te gustaría trabajar en un entorno donde puedas liderar equipos o
-          proyectos?
-        </h3>
-        <label
-          ><input type="radio" name="liderazgo" value="A" /> A) Sí, me encanta
-          la idea de liderar equipos</label
-        ><br />
-        <label
-          ><input type="radio" name="liderazgo" value="B" /> B) Sí, pero
-          prefiero coordinar y organizar sin liderar directamente</label
-        ><br />
-        <label
-          ><input type="radio" name="liderazgo" value="C" /> C) Prefiero
-          trabajar individualmente</label
-        ><br />
-        <label
-          ><input type="radio" name="liderazgo" value="D" /> D) No estoy
-          seguro/a</label
-        ><br />
-
-        <h3>4. ¿Qué prefieres hacer al resolver problemas?</h3>
-        <label
-          ><input type="radio" name="resolver" value="A" /> A) Utilizar
-          razonamiento lógico y matemático</label
-        ><br />
-        <label
-          ><input type="radio" name="resolver" value="B" /> B) Planificar
-          estrategias y coordinar tareas</label
-        ><br />
-        <label
-          ><input type="radio" name="resolver" value="C" /> C) Investigar e
-          innovar con nuevas tecnologías</label
-        ><br />
-        <label
-          ><input type="radio" name="resolver" value="D" /> D) Organizar los
-          recursos de manera efectiva</label
-        ><br />
-
-        <h3>
-          5. ¿Qué tan interesado/a estás en el uso de tecnologías avanzadas para
-          mejorar sistemas?
-        </h3>
-        <label
-          ><input type="radio" name="tecnologias" value="A" /> A) Muy
-          interesado/a</label
-        ><br />
-        <label
-          ><input type="radio" name="tecnologias" value="B" /> B) Algo
-          interesado/a</label
-        ><br />
-        <label
-          ><input type="radio" name="tecnologias" value="C" /> C) Solo si es
-          necesario</label
-        ><br />
-        <label
-          ><input type="radio" name="tecnologias" value="D" /> D) No me interesa
-          mucho</label
-        ><br />
-
-        <!-- Preguntas para recomendar actividades extraescolares -->
-        <h3>Preguntas sobre actividades extracurriculares:</h3>
-        <div class="dropdown-divider"></div>
-        <h3>1. ¿Cuál de las siguientes actividades deportivas prefieres?</h3>
-        <label
-          ><input type="radio" name="deporte2" value="A" /> A) Básquetbol</label
-        ><br />
-        <label
-          ><input type="radio" name="deporte2" value="B" /> B) Voleibol</label
-        ><br />
-        <label><input type="radio" name="deporte2" value="C" /> C) Fútbol</label
-        ><br />
-        <label><input type="radio" name="deporte2" value="D" /> D) Boxeo</label
-        ><br />
-
-        <h3>
-          2. ¿Qué tipo de actividades culturales o artísticas te interesan más?
-        </h3>
-        <label
-          ><input type="radio" name="cultural" value="A" /> A) Danza o
-          teatro</label
-        ><br />
-        <label
-          ><input type="radio" name="cultural" value="B" /> B) Banda de guerra o
-          escolta</label
-        ><br />
-        <label
-          ><input type="radio" name="cultural" value="C" /> C) Banda versátil o
-          estudiantina</label
-        ><br />
-        <label
-          ><input type="radio" name="cultural" value="D" /> D) Club de lectura o
-          ajedrez</label
-        ><br />
-
-        <h3>
-          3. ¿Te gustaría participar en actividades de estrategia o
-          intelectuales?
-        </h3>
-        <label
-          ><input type="radio" name="estrategia" value="A" /> A) Sí, en
-          actividades como ajedrez</label
-        ><br />
-        <label
-          ><input type="radio" name="estrategia" value="B" /> B) Sí, en algo
-          como un club de lectura</label
-        ><br />
-        <label
-          ><input type="radio" name="estrategia" value="C" /> C) Prefiero
-          actividades físicas o deportivas</label
-        ><br />
-        <label
-          ><input type="radio" name="estrategia" value="D" /> D) No estoy
-          seguro/a</label
-        ><br />
-
-        <h3>
-          4. ¿Cuál de estas actividades te resultaría más atractiva para
-          integrarte en la escuela?
-        </h3>
-        <label
-          ><input type="radio" name="integracion" value="A" /> A) Participar en
-          la escolta</label
-        ><br />
-        <label
-          ><input type="radio" name="integracion" value="B" /> B) Practicar en
-          la banda de guerra</label
-        ><br />
-        <label
-          ><input type="radio" name="integracion" value="C" /> C) Integrarme a
-          un club de teatro</label
-        ><br />
-        <label
-          ><input type="radio" name="integracion" value="D" /> D) Participar en
-          un club de boxeo</label
-        ><br />
-
-        <button type="submit" class="btn btn-primary" style="margin-top: 2rem; margin: 3rem;">
-          VER RESULTADOS
-        </button>
-      </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Incluir jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Incluir Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Incluir Bootstrap JavaScript -->
+  <title>Formulario de Recomendación</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="image/logo-removebg-preview.png" alt="logo" class="img-fluid" width="100px" height="100px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">ITIZ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#oferta">OFERTA ACADEMICA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulario.html">FORMULARIO</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Modal de recomendaciones -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">
-              Recomendaciones
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="recomendacionesBody">
-            <!-- Aquí se mostrarán las recomendaciones -->
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Cerrar
-            </button>
-          </div>
+  <div class="container" style="margin-top: 3rem">
+    <h1 style="color: rgb(236, 236, 240)">FORMULARIO DE RECOMENDACION DE CARRERA</h1>
+    <div class="dropdown-divider"></div>
+    <form id="interestsForm" style="text-transform: uppercase;">
+      <!-- Preguntas para recomendar una carrera -->
+      <h3>1. ¿Cuál de las siguientes actividades te interesa más?</h3>
+      <label><input type="radio" name="areaInteres" value="1"> A) Tecnología y desarrollo de software</label><br>
+      <label><input type="radio" name="areaInteres" value="2"> B) Administración y gestión empresarial</label><br>
+      <label><input type="radio" name="areaInteres" value="3"> C) Innovación tecnológica</label><br>
+      <label><input type="radio" name="areaInteres" value="4"> D) Gestión y organización de recursos</label><br>
+
+      <h3>2. ¿Qué tan cómodo/a te sientes trabajando con matemáticas y ciencias físicas?</h3>
+      <label><input type="radio" name="matematicas" value="1"> A) Muy cómodo/a</label><br>
+      <label><input type="radio" name="matematicas" value="2"> B) Algo cómodo/a</label><br>
+      <label><input type="radio" name="matematicas" value="3"> C) Indiferente</label><br>
+      <label><input type="radio" name="matematicas" value="4"> D) Prefiero evitarlo</label><br>
+
+      <h3>3. ¿Te gustaría trabajar en un entorno donde puedas liderar equipos o proyectos?</h3>
+      <label><input type="radio" name="liderazgo" value="1"> A) Sí, me encanta la idea de liderar equipos</label><br>
+      <label><input type="radio" name="liderazgo" value="2"> B) Sí, pero prefiero coordinar y organizar sin liderar directamente</label><br>
+      <label><input type="radio" name="liderazgo" value="3"> C) Prefiero trabajar individualmente</label><br>
+      <label><input type="radio" name="liderazgo" value="4"> D) No estoy seguro/a</label><br>
+
+      <h3>4. ¿Qué prefieres hacer al resolver problemas?</h3>
+      <label><input type="radio" name="resolucionProblemas" value="1"> A) Utilizar razonamiento lógico y matemático</label><br>
+      <label><input type="radio" name="resolucionProblemas" value="2"> B) Planificar estrategias y coordinar tareas</label><br>
+      <label><input type="radio" name="resolucionProblemas" value="3"> C) Investigar e innovar con nuevas tecnologías</label><br>
+      <label><input type="radio" name="resolucionProblemas" value="4"> D) Organizar los recursos de manera efectiva</label><br>
+
+      <h3>5. ¿Qué tan interesado/a estás en el uso de tecnologías avanzadas para mejorar sistemas?</h3>
+      <label><input type="radio" name="tecnologiaAvanzada" value="1"> A) Muy interesado/a</label><br>
+      <label><input type="radio" name="tecnologiaAvanzada" value="2"> B) Algo interesado/a</label><br>
+      <label><input type="radio" name="tecnologiaAvanzada" value="3"> C) Solo si es necesario</label><br>
+      <label><input type="radio" name="tecnologiaAvanzada" value="4"> D) No me interesa mucho</label><br>
+
+      <h3>6. ¿Qué actividad deportiva prefieres?</h3>
+      <label><input type="radio" name="deporte" value="1"> A) Básquetbol</label><br>
+      <label><input type="radio" name="deporte" value="2"> B) Voleibol</label><br>
+      <label><input type="radio" name="deporte" value="3"> C) Fútbol</label><br>
+      <label><input type="radio" name="deporte" value="4"> D) Boxeo</label><br>
+
+      <h3>7. ¿Qué actividad cultural o artística te atrae más?</h3>
+      <label><input type="radio" name="actividadCultural" value="1"> A) Danza o teatro</label><br>
+      <label><input type="radio" name="actividadCultural" value="2"> B) Banda de guerra o escolta</label><br>
+      <label><input type="radio" name="actividadCultural" value="3"> C) Música, como banda versátil o estudiantina</label><br>
+      <label><input type="radio" name="actividadCultural" value="4"> D) Club de lectura o ajedrez</label><br>
+
+      <h3>8. ¿Te gustaría participar en actividades de estrategia o intelectuales?</h3>
+      <label><input type="radio" name="estrategia" value="1"> A) Sí, en actividades como ajedrez</label><br>
+      <label><input type="radio" name="estrategia" value="2"> B) Sí, en algo como un club de lectura</label><br>
+      <label><input type="radio" name="estrategia" value="3"> C) Prefiero actividades físicas o deportivas</label><br>
+      <label><input type="radio" name="estrategia" value="4"> D) No estoy seguro/a</label><br>
+
+      <button type="submit" class="btn btn-primary">Ver Resultados</button>
+    </form>
+  </div>
+
+  <!-- Modal de recomendaciones -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Recomendaciones</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="recomendacionesBody">
+          <!-- Aquí se mostrarán las recomendaciones -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      document
-        .getElementById("interestsForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+  <!-- Script -->
+  <script>
+    document.getElementById('interestsForm').addEventListener('submit', function(event) {
+      event.preventDefault();
 
-          // Obtener las respuestas de las preguntas de carrera
-          const actividad1 = document.querySelector(
-            'input[name="actividad1"]:checked'
-          )?.value;
-          const comodidad = document.querySelector(
-            'input[name="comodidad"]:checked'
-          )?.value;
-          const liderazgo = document.querySelector(
-            'input[name="liderazgo"]:checked'
-          )?.value;
-          const resolver = document.querySelector(
-            'input[name="resolver"]:checked'
-          )?.value;
-          const tecnologias = document.querySelector(
-            'input[name="tecnologias"]:checked'
-          )?.value;
+      const areaInteresElem = document.querySelector('input[name="areaInteres"]:checked');
+      const matematicasElem = document.querySelector('input[name="matematicas"]:checked');
+      const liderazgoElem = document.querySelector('input[name="liderazgo"]:checked');
+      const resolucionProblemasElem = document.querySelector('input[name="resolucionProblemas"]:checked');
+      const tecnologiaAvanzadaElem = document.querySelector('input[name="tecnologiaAvanzada"]:checked');
+      const deporteElem = document.querySelector('input[name="deporte"]:checked');
+      const actividadCulturalElem = document.querySelector('input[name="actividadCultural"]:checked');
+      const estrategiaElem = document.querySelector('input[name="estrategia"]:checked');
 
-          // Obtener las respuestas de las preguntas de actividades extraescolares
-          const deporte2 = document.querySelector(
-            'input[name="deporte2"]:checked'
-          )?.value;
-          const cultural = document.querySelector(
-            'input[name="cultural"]:checked'
-          )?.value;
-          const estrategia = document.querySelector(
-            'input[name="estrategia"]:checked'
-          )?.value;
-          const integracion = document.querySelector(
-            'input[name="integracion"]:checked'
-          )?.value;
+      if (
+        !areaInteresElem ||
+        !matematicasElem ||
+        !liderazgoElem ||
+        !resolucionProblemasElem ||
+        !tecnologiaAvanzadaElem ||
+        !deporteElem ||
+        !actividadCulturalElem ||
+        !estrategiaElem
+      ) {
+        alert('Por favor, responde todas las preguntas.');
+        return;
+      }
 
-          // Generar recomendaciones basadas en las respuestas
-          let recomendaciones = "Recomendaciones basadas en tus intereses:\n\n";
+      const areaInteres = parseInt(areaInteresElem.value);
+      const matematicas = parseInt(matematicasElem.value);
+      const liderazgo = parseInt(liderazgoElem.value);
+      const resolucionProblemas = parseInt(resolucionProblemasElem.value);
+      const tecnologiaAvanzada = parseInt(tecnologiaAvanzadaElem.value);
+      const deporte = parseInt(deporteElem.value);
+      const actividadCultural = parseInt(actividadCulturalElem.value);
+      const estrategia = parseInt(estrategiaElem.value);
 
-          // Recomendaciones de carrera
-          recomendaciones += "Carreras recomendadas:\n";
-          if (actividad1 === "A" || tecnologias === "A") {
-            recomendaciones += "- Ingeniería en Sistemas Computacionales\n";
-          }
-          if (actividad1 === "B" || liderazgo === "A") {
-            recomendaciones += "- Ingeniería en Gestión Empresarial\n";
-          }
-          if (actividad1 === "C" || resolver === "C") {
-            recomendaciones += "- Ingeniería Mecatrónica\n";
-          }
-          if (actividad1 === "D" || comodidad === "A") {
-            recomendaciones += "- Ingeniería Industrial\n";
-          }
+      const userResponse = {
+        areaInteres,
+        matematicas,
+        liderazgo,
+        resolucionProblemas,
+        tecnologiaAvanzada,
+        deporte,
+        actividadCultural,
+        estrategia
+      };
 
-          // Recomendaciones de actividades extraescolares
-          recomendaciones += "\nActividades extraescolares recomendadas:\n";
-          if (deporte2 === "A") {
-            recomendaciones += "- Básquetbol\n";
-          }
-          if (deporte2 === "B") {
-            recomendaciones += "- Voleibol\n";
-          }
-          if (deporte2 === "C") {
-            recomendaciones += "- Fútbol\n";
-          }
-          if (deporte2 === "D") {
-            recomendaciones += "- Boxeo\n";
-          }
-          if (cultural === "A") {
-            recomendaciones += "- Danza o teatro\n";
-          }
-          if (cultural === "B") {
-            recomendaciones += "- Banda de guerra o escolta\n";
-          }
-          if (cultural === "C") {
-            recomendaciones += "- Banda versátil o estudiantina\n";
-          }
-          if (cultural === "D") {
-            recomendaciones += "- Club de lectura o ajedrez\n";
-          }
-          if (estrategia === "A") {
-            recomendaciones += "- Ajedrez\n";
-          }
-          if (estrategia === "B") {
-            recomendaciones += "- Club de lectura\n";
-          }
-          if (estrategia === "C") {
-            recomendaciones += "- Actividades físicas o deportivas\n";
-          }
-          if (estrategia === "D") {
-            recomendaciones +=
-              "- Explora diferentes actividades para encontrar tu interés\n";
-          }
-          if (integracion === "A") {
-            recomendaciones += "- Participar en la escolta\n";
-          }
-          if (integracion === "B") {
-            recomendaciones += "- Practicar en la banda de guerra\n";
-          }
-          if (integracion === "C") {
-            recomendaciones += "- Integrarme a un club de teatro\n";
-          }
-          if (integracion === "D") {
-            recomendaciones += "- Participar en un club de boxeo\n";
-          }
-
-          // Mostrar las recomendaciones en el modal
-          document.getElementById("recomendacionesBody").innerText =
-            recomendaciones;
-          $("#exampleModalCenter").modal("show");
-        });
-    </script>
-  </body>
+      fetch('/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userResponse) 
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.json().then(err => { throw new Error(err.error || 'Error en la respuesta del servidor'); });
+        }
+        return response.json();
+      })
+      .then(result => {
+        document.getElementById('recomendacionesBody').innerText = result.recomendaciones;
+        $('#exampleModalCenter').modal('show'); 
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Ocurrió un error al obtener las recomendaciones.');
+      });
+    });
+  </script>
+</body>
 </html>
